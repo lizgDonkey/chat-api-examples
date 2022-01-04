@@ -1,0 +1,18 @@
+.App {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.App-input {
+  width: 200px !important;
+  height: 30px !important;
+  margin: 5px 0 0 5px !important;
+}
+
+.App-lable {
+  margin-left: 5px;
+}
+
+.App-btn {
+  margin: 5px 0 0 5px !important;
+}
