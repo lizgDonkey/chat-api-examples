@@ -1,6 +1,14 @@
 .App {
   text-align: left;
   margin-left: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: calc(100% - 107px);
+  width: 100%;
+  position: absolute;
 }
 
 .App-input {
