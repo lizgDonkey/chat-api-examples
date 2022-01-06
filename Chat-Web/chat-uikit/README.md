@@ -28,7 +28,7 @@ HTTPS=true yarn start
 ```
 
 目录如下：
-
+```josn
 ├── package.json
 ├── public                  # 这个是webpack的配置的静态目录。
 │   ├── favicon.ico
@@ -43,7 +43,7 @@ HTTPS=true yarn start
 │   ├── logo.svg
 │   └── serviceWorker.js
 └── yarn.lock
-
+```
 
 ### 2、集成 Uikit
 

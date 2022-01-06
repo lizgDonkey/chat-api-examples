@@ -1,3 +1,5 @@
 node_modules/
 .DS_Store
 dist/
+
+chat-uikit/node_modules/
