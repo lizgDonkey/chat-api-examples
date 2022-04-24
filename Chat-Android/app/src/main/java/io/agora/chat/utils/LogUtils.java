@@ -29,14 +29,14 @@ public class LogUtils {
         if(TextUtils.isEmpty(content) || tvLog == null) {
             return;
         }
-        String preContent = tvLog.getText().toString().trim();
-        StringBuilder builder = new StringBuilder();
-        builder.append(formatCurrentTime())
-                .append(" ")
-                .append(content)
-                .append("\n")
-                .append(preContent);
         tvLog.post(()-> {
+            String preContent = tvLog.getText().toString().trim();
+            StringBuilder builder = new StringBuilder();
+            builder.append(formatCurrentTime())
+                    .append(" ")
+                    .append(content)
+                    .append("\n")
+                    .append(preContent);
             tvLog.setText(builder);
         });
     }
