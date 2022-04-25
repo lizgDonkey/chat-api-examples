@@ -1,6 +1,6 @@
-# 从 Agora Chat Server 获取会话列表及漫游消息
+# 从 Agora Chat Server 获取会话列表及消息
 
-本文详细介绍了如何从 Agora Chat Server 获取会话列表及漫游消息。
+本文详细介绍了如何从 Agora Chat Server 获取会话列表及消息。
 
 ## 登录 Agora Chat 系统流程
 登录 Agora Chat 系统包括以下流程：
