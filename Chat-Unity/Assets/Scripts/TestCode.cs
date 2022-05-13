@@ -9,17 +9,18 @@ public class TestCode : MonoBehaviour, IChatManagerDelegate
 {
     static string APPKEY = "easemob-demo#easeim";
 
-    public Text Username;
-    public Text Password;
-    public Text SignChatId;
-    public Text MessageContent;
-    public Text GroupId;
+    public InputField Username;
+    public InputField Password;
+    public InputField SignChatId;
+    public InputField MessageContent;
+    public InputField GroupId;
 
     public Button SignInBtn;
     public Button SignUpBtn;
     public Button SignOutBtn;
     public Button SendMsgBtn;
     public Button JoinGroupBtn;
+
 
     public Text LogText;
 
@@ -128,6 +129,7 @@ public class TestCode : MonoBehaviour, IChatManagerDelegate
             AddLogToLogText("groupId is null, please input group id");
             return;
         }
+
         SDKClient.Instance.GroupManager.JoinPublicGroup(groupId: GroupId.text, new CallBack(
             onSuccess: () => {
                 AddLogToLogText($"join group succeed, groupId: {GroupId.text}");
