@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FetchMessagesFromServerActivity">
+    tools:context="io.agora.quickstart.io.agora.agorachatquickstart.FetchMessagesFromServerActivity">
 
     <ScrollView
         android:layout_width="match_parent"

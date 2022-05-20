@@ -1,4 +1,4 @@
-package io.agora.chat.record;
+package io.agora.agorachatquickstart.record;
 
 import android.content.Context;
 import android.media.AudioManager;

@@ -1,4 +1,4 @@
-package io.agora.chat.utils;
+package io.agora.agorachatquickstart.utils;
 
 import static io.agora.cloud.HttpClientManager.Method_POST;
 
@@ -14,9 +14,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.agora.CallBack;
+import io.agora.agorachatquickstart.R;
 import io.agora.chat.ChatClient;
 import io.agora.chat.ChatOptions;
-import io.agora.chat.R;
 import io.agora.cloud.HttpClientManager;
 import io.agora.cloud.HttpResponse;
 

@@ -1,18 +1,14 @@
-package io.agora.chat.utils;
+package io.agora.agorachatquickstart.utils;
 
 import android.app.Activity;
-import android.os.Handler;
-import android.os.Looper;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import java.util.TimeZone;
 
 public class LogUtils {
     private static final String TAG = LogUtils.class.getSimpleName();

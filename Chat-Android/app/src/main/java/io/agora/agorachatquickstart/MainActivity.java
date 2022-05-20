@@ -1,4 +1,4 @@
-package io.agora.chat;
+package io.agora.agorachatquickstart;
 
 import static io.agora.cloud.HttpClientManager.Method_POST;
 
@@ -26,9 +26,13 @@ import io.agora.CallBack;
 import io.agora.ConnectionListener;
 import io.agora.Error;
 import io.agora.MessageListener;
-import io.agora.chat.utils.ImageUtils;
-import io.agora.chat.utils.LogUtils;
-import io.agora.chat.utils.PermissionsManager;
+import io.agora.agorachatquickstart.utils.ImageUtils;
+import io.agora.agorachatquickstart.utils.PermissionsManager;
+import io.agora.chat.ChatClient;
+import io.agora.chat.ChatMessage;
+import io.agora.chat.ChatOptions;
+import io.agora.chat.TextMessageBody;
+import io.agora.agorachatquickstart.utils.LogUtils;
 import io.agora.cloud.HttpClientManager;
 import io.agora.cloud.HttpResponse;
 import io.agora.util.EMLog;

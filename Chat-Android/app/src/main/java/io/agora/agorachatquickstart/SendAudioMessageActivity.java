@@ -1,4 +1,4 @@
-package io.agora.chat;
+package io.agora.agorachatquickstart;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -22,12 +22,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import io.agora.CallBack;
 import io.agora.ConnectionListener;
 import io.agora.Error;
-import io.agora.chat.record.EaseChatRowVoicePlayer;
-import io.agora.chat.record.EaseVoiceRecorder;
-import io.agora.chat.utils.AccountHelper;
-import io.agora.chat.utils.LogUtils;
-import io.agora.chat.utils.PermissionsManager;
-import io.agora.util.EMLog;
+import io.agora.agorachatquickstart.record.EaseChatRowVoicePlayer;
+import io.agora.agorachatquickstart.record.EaseVoiceRecorder;
+import io.agora.agorachatquickstart.utils.AccountHelper;
+import io.agora.agorachatquickstart.utils.PermissionsManager;
+import io.agora.chat.ChatClient;
+import io.agora.chat.ChatMessage;
+import io.agora.agorachatquickstart.utils.LogUtils;
 
 public class SendAudioMessageActivity extends AppCompatActivity implements ConnectionListener {
     private Activity mContext;

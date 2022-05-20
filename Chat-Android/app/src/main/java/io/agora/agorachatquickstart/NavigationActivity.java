@@ -1,4 +1,4 @@
-package io.agora.chat;
+package io.agora.agorachatquickstart;
 
 import android.app.Activity;
 import android.content.Intent;

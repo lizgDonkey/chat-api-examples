@@ -1,4 +1,4 @@
-package io.agora.chat;
+package io.agora.agorachatquickstart;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -19,8 +19,12 @@ import java.util.Map;
 import io.agora.ConnectionListener;
 import io.agora.Error;
 import io.agora.ValueCallBack;
-import io.agora.chat.utils.AccountHelper;
-import io.agora.chat.utils.LogUtils;
+import io.agora.agorachatquickstart.utils.AccountHelper;
+import io.agora.chat.ChatClient;
+import io.agora.chat.ChatMessage;
+import io.agora.chat.Conversation;
+import io.agora.chat.CursorResult;
+import io.agora.agorachatquickstart.utils.LogUtils;
 
 public class FetchMessagesFromServerActivity extends AppCompatActivity implements ConnectionListener {
     private Activity mContext;
