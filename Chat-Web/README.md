@@ -73,6 +73,7 @@ import WebIM from 'agora-chat'
 ```
 
 - 如果是 Typescript 这样引入类型声明：
+
 ```JavaScript
 import WebIM, { AgoraChat } from 'agora-chat'
 ```
