@@ -921,3 +921,8 @@ dependencies {
 ### 2.搭建自己获取 Token 的 App Server。
 1. 在实际开发中，用户需要搭建自己的 App Server 去获取鉴权的 Token。
 2. 在用户的 App Server 中需要配置用户申请的 AppKey。
+
+## 更多示例代码
+### [1.导入其他平台的消息]([])。// TODO 添加相关功能链接
+### [2.录制并发送语音消息]([])。// TODO 添加相关功能链接
+### [3.从 Agora Chat Server 获取会话列表及消息]([])。// TODO 添加相关功能链接

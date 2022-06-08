@@ -86,7 +86,7 @@ window.onload = function () {
                     agoraToken: agoraToken
                 });
             })
-            .catch((res)=> {
+            .catch((err)=> {
                 document.getElementById("log").appendChild(document.createElement('div')).append(`Login failed`)
             })
 
@@ -110,8 +110,8 @@ window.onload = function () {
         let option = {
             chatType: 'singleChat',    // 设置为单聊
             type: 'txt',               // 消息类型
-            to: 'userID',              // 接收消息对象（用户 ID)
-            msg: 'message content'     // 消息
+            to: peerId,                // 接收消息对象（用户 ID)
+            msg: peerMessage           // 消息
         }
         let msg = WebIM.message.create(option); 
         WebIM.conn.send(msg).then((res) => {
