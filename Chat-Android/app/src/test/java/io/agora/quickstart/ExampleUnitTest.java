@@ -1,4 +1,4 @@
-package io.agora.chat;
+package io.agora.quickstart;
 
 import org.junit.Test;
 
