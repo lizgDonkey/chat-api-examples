@@ -12,11 +12,11 @@ struct Index {
   @State pwd: string = '';
   @State to: string = '';
   @State content: string = '';
+  private appKey: string = '';
   scroller: Scroller = new Scroller();
 
   private initSDK() {
-    let options = new ChatOptions();
-    options.setAppKey("easemob#easeim");
+    let options = new ChatOptions(this.appKey);
     options.setAutoLogin(false);
     ChatClient.getInstance().init(options);
   }
@@ -73,7 +73,7 @@ struct Index {
     }
   }
 
-  private formatData(): string {
+  private formatDate(): string {
     let dateTimeFormat = new intl.DateTimeFormat("zh-CN", {dateStyle: "short", timeStyle: "medium", hourCycle: "h24"});
     return dateTimeFormat.format(new Date());
   }
@@ -83,7 +83,7 @@ struct Index {
       Prompt.showToast({message: newLog});
     }
     let preLog = this.logInfo;
-    newLog = this.formatData() + "\t\t" + newLog;
+    newLog = this.formatDate() + "\t\t" + newLog;
     this.logInfo = preLog + "\n" + newLog;
   }
 
@@ -110,6 +110,10 @@ struct Index {
       Button('登 录')
         .fontSize(20)
         .onClick((event: ClickEvent) => {
+          if (!this.appKey) {
+            this.addLog("请设置AppKey，从 console 后台上获取");
+            return
+          }
           this.initSDK();
           if (!this.userId || !this.pwd) {
             this.addLog("用户名或者密码为空");
