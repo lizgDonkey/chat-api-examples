@@ -18,7 +18,7 @@ struct Index {
   private initSDK() {
     let options = new ChatOptions(this.appKey);
     options.setAutoLogin(false);
-    ChatClient.getInstance().init(options);
+    ChatClient.getInstance().init(getContext(this), options);
   }
 
   private login(userId: string, pwd: string) {
@@ -39,11 +39,9 @@ struct Index {
     let callback: ChatCallback = {
       onSuccess: () => {
         this.addLog("Send message success, message id: "+message?.getMsgId(), false);
-        this.scrollToBottom();
       },
       onError: (code: number, error: string) => {
         this.addLog("Send message failed, message id: "+message?.getMsgId() + " errorCode: "+code);
-        this.scrollToBottom();
       }
     }
     message.setMessageStatusCallback(callback);
@@ -66,13 +64,6 @@ struct Index {
     ChatClient.getInstance().chatManager()?.addMessageListener(messageListener);
   }
 
-  private scrollToBottom() {
-    this.scroller.scrollBy(0, 200);
-    while (!this.scroller.isAtEnd()) {
-      this.scroller.scrollBy(0, 2000);
-    }
-  }
-
   private formatDate(): string {
     let dateTimeFormat = new intl.DateTimeFormat("zh-CN", {dateStyle: "short", timeStyle: "medium", hourCycle: "h24"});
     return dateTimeFormat.format(new Date());
@@ -84,7 +75,7 @@ struct Index {
     }
     let preLog = this.logInfo;
     newLog = this.formatDate() + "\t\t" + newLog;
-    this.logInfo = preLog + "\n" + newLog;
+    this.logInfo = newLog + "\n" + preLog;
   }
 
   build() {
