@@ -55,7 +55,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "chatsdk": "file:./libs/chatsdk-x.x.x.har"
+    "@easemob/chatsdk": "file:./libs/chatsdk-1.2.0.har"
   }
 }
 ```
@@ -90,7 +90,7 @@
 ```TypeScript
 let options = new ChatOptions("Your appkey");
 ......// 其他 ChatOptions 配置。
-ChatClient.getInstance().init(options);
+ChatClient.getInstance().init(context, options);
 ```
 
 ### 2. 创建账号

@@ -1,6 +1,6 @@
 import { ChatClient, ChatOptions, ChatMessage,
   TextMessageBody, ContentType, ChatMessageListener,
-  ChatCallback, ChatError } from 'chatsdk';
+  ChatCallback, ChatError } from '@easemob/chatsdk';
 import { Prompt } from '@kit.ArkUI';
 import intl from '@ohos.intl'
 
