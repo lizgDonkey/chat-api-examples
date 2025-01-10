@@ -16,7 +16,9 @@ struct Index {
   scroller: Scroller = new Scroller();
 
   private initSDK() {
-    let options = new ChatOptions(this.appKey);
+    let options = new ChatOptions({
+      appKey: this.appKey
+    });
     options.setAutoLogin(false);
     ChatClient.getInstance().init(getContext(this), options);
   }
